@@ -48,8 +48,7 @@ public class Main {
 //       System.out.println(sum1-sum);
 
 //        Задача 4
-//
-  //       int[] mas3 = {1, 5, 3, 7, 3, 6, 3, 4, 7};
+//       int[] mas3 = {1, 5, 3, 7, 3, 6, 3, 4, 7};
 //
   //       int a = 0;
   //       int d = 0;
