@@ -2,7 +2,7 @@ package com.TMS.Less3;
 
 import java.util.Scanner;
 
-public class Main {
+public class Less3 {
 
     public static void main(String[] args) {
 

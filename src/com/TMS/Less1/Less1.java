@@ -1,4 +1,5 @@
 package com.TMS.Less1;
 
-public class Main {
+public class Less1 {
+
 }
