@@ -1,4 +1,4 @@
-package com.company;
+package com.TMS.Less3;
 
 import java.util.Scanner;
 
