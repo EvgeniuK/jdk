@@ -7,14 +7,14 @@ public class Less3 {
     public static void main(String[] args) {
 
 //     Задача 1
-//     Scanner Sw = new Scanner(System.in);
-//     int n = Sw.nextInt();
-//     int[] Fib = new int[n];
-//     Fib[0] = 0;
-//     Fib[1] = 1;
-//      for (int i = 2; i < Fib.length; ++i) {
-//        Fib[i] = Fib[i - 1] + Fib[i - 2];
-//        System.out.println(Fib[i]);
+     Scanner Sw = new Scanner(System.in);
+     int n = Sw.nextInt();
+     int[] Fib = new int[n];
+     Fib[0] = 0;
+     Fib[1] = 1;
+      for (int i = 2; i < Fib.length; ++i) {
+        Fib[i] = Fib[i - 1] + Fib[i - 2];
+        System.out.println(Fib[i]);
 
            //        Задача 2
 
@@ -65,6 +65,7 @@ public class Less3 {
 
 
            }
+    }
     }
 
 
