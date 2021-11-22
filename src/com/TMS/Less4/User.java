@@ -9,6 +9,8 @@ public class User {
 public void nameLastname (){
     System.out.println( "name: " + name );
     System.out.println( "Lastname: " + Lastname );
+    System.out.println( "Sex: " + sex );
+    System.out.println( "Age: " + age);
 
 }
 @Deprecated
