@@ -2,6 +2,8 @@ package com.TMS.Less10;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class StreamMain {
 
@@ -29,11 +31,42 @@ public class StreamMain {
 
         List<Family> families = Arrays.asList(family1, family2, family3);
 
+        System.out.println("________________");
         families.stream()
-                .filter(family -> family.getChildren().size()>3)
+                .flatMap(family -> family.getChildren().stream())
+                .filter(child -> child.getName().contains("2"))
                 .forEach(System.out::println);
 
+        System.out.println("________________");
+        families.stream()
+                .filter(family -> family.getChildren().size() > 3)
+                .forEach(System.out::println);
 
+        System.out.println("________________");
+        families.stream()
+                .flatMap(family -> family.getChildren().stream())
+                .filter(Child::isSex)
+                .forEach(System.out::println);
+
+        System.out.println("________________");
+        families.stream()
+                .flatMap(family -> family.getChildren().stream())
+                .forEach(child -> System.out.println(child.getName().toUpperCase()));
+
+
+        System.out.println("________________");
+        int a =
+                families.stream()
+                        .mapToInt(value -> value.getChildren().size())
+                        .sum();
+        System.out.println(a);
+
+
+        System.out.println("________________");
+        Map<String, Integer> map =
+                families.stream()
+                        .collect(Collectors.toMap(Family::getName, value -> value.getChildren().size()));
+        map.entrySet().forEach(System.out::println);
 
     }
 }
