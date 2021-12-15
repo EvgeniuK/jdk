@@ -24,7 +24,7 @@ public class Less1 {
         } else {
             System.out.println("числа равные");
         }
-        if (d % m == 0) {
+        if (d % 2 == 0) {
             System.out.println("числа четные ");
         } else {
             System.out.println("d/m- " + "целая часть  " + d / m + ", остаток " + (d % m));
